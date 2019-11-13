@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TableRow
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/simpleTex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="User Registraton"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:id="@+id/textviewname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="Name" />
+        <EditText
+            android:id="@+id/tbl_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/dobrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/dobtext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="DOB" />
+        <EditText
+            android:id="@+id/tbl_dob"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+             />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textviewgender"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="23sp" />
+        <RadioGroup
+            android:id="@+id/tbl_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_male"
+                android:text="Male" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_female"
+                android:text="Female" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_other"
+                android:text="Other" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/spinnerrow"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/spinertext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textSize="23sp"/>
+        <Spinner
+            android:id="@+id/spiinerdata"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textviewemail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="23sp"/>
+        <EditText
+            android:id="@+id/tbl_email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowemail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textviewphone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="23sp"/>
+        <EditText
+            android:id="@+id/tbl_phone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textviewaddress"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="23sp"/>
+        <EditText
+            android:id="@+id/tbl_address"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/textviewimage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:textSize="23sp"
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/userimage"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+                />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Submit"
+            />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="View"
+            />
+    </TableRow>
+
+
+
+
+
+</TableLayout>
